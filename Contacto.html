@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosContacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Gustavo Cerati</h1>
+        <h2 class="subtitulo">Página no Oficial</h2>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><b><a href="index.html">Inicio</a></b></li>
+                    <li><b><a href="Historia.html">Historia</a></b></li>
+                    <li><b><a href="Canciones.html">Canciones</a></b></li>
+                    <li><b><a href="Contacto.html">Contacto</a></b></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="#" onsubmit="javascript:alert('Gracias por responder')" target="index.html">
+        <h1 class="titulos"> Formulario de Contacto </h1>
+        <fieldset class="marco">
+            <legend class="leyenda">Tus datos</legend>
+            <div class="contenedor">
+                <div class="contenido">
+                    <p>
+                        <label class="lblDatosPersonales">
+                            Nombre y Apellido
+                            <input text="text" name="nombre" maxlength="50" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="lblDatosPersonales">
+                            Teléfono
+                            <input text="number" name="telefono" maxlength="15" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="lblDatosPersonales">
+                            E-Mail
+                            <input text="text" name="email" maxlength="50" required>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="contenido">
+                    <p>
+                        <label class="lblDatosPersonales">
+                            Usuario Instagram
+                            <input text="text" name="insta" maxlength="50" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="lblDatosPersonales">
+                            Usuario Facebook
+                            <input text="text" name="face" maxlength="50" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="lblDatosPersonales">
+                            Usuario Twitter
+                            <input text="text" name="tw" maxlength="50" required>
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset class="marco">
+            <legend class="leyenda"> Que es lo que más te gusta </legend>
+            <div class="contenedor">
+
+                <div class="contenido">
+                    <p>
+                        <label class=lblCont>
+                            Albums Favoritos
+                    </p><br>
+                    <input type="checkbox" name="Amor Amarillo">Amor Amarillo<br>
+                    <input type="checkbox" name="Bocanada">Bocanada<br>
+                    <input type="checkbox" name="Siempre es Hoy">Siempre es Hoy<br>
+                    <input type="checkbox" name="Ahi Vamos">Ahí Vamos<br>
+                    <input type="checkbox" name="Fuerza Natural">Fuerza Natural<br>
+
+                    </label>
+
+                </div>
+                <br>
+
+                <div class="contenido">
+                    <p>
+
+                        <label class=lblCont>
+                            Canción Favorita <br><br>
+                    </p>
+                    <input type="radio" name="Puente">Puente <br>
+                    <input type="radio" name="Puente">Fuerza Natural <br>
+                    <input type="radio" name="Puente">Lago en el cielo <br>
+                    <input type="radio" name="Puente">Beautiful <br>
+                    <input type="radio" name="Puente">Nací para esto <br>
+                    <input type="radio" name="Puente">Otro <br>
+
+
+
+                    <!--
+                    <select name="album">
+
+
+                        
+                        <option>Puente</option>
+                        <option>Fuerza Natural</option>
+                        <option>Lago en el cielo</option>
+                        <option>Beautiful</option>
+                        <option>Nací para esto</option>
+                    </select>-->
+
+                    </label>
+
+
+                </div>
+                <div class="contenido">
+                    <p>
+
+                        <label class=lblCont>
+                            Dejanos algún mensaje... <br><br>
+
+                            <textarea id="cajatexto" name="mensaje" maxlength="100"
+                                placeholder="Este es un mensaje de muestra...">
+
+
+                    </textarea>
+
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+        <div class="botones">
+            <p><input class="boton" type="submit" value="Enviar" style="font-size: 25px;"></p>
+            <p><input class="boton" type="reset" value="Reiniciar Formulario" style="font-size: 25px;"></p>
+        </div>
+    </form>
+
+
+    <footer> <b>2020 | Página con fines educativos | Derechos reservados. </b></footer>
+</body>
+
+</html>

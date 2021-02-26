@@ -1,0 +1,161 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 200px;
+    height: 70px;
+    width: 949px;
+    display: flex;
+    background-color: white;
+}
+
+.titulo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: grey;
+    }
+
+.subtitulo {
+    position: absolute;
+    top: 52px;
+    left: 60px;
+    color:grey;
+    font-size:14px;
+}
+
+.menu {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    }
+
+nav {
+    height: 100%;
+    width: 50%;
+}
+ul {
+    display: flex; /* esto hace que mis elementos de la lista estén alineados*/
+    justify-content: center;
+}
+li {
+    list-style: none; /* no muestra la bolita */
+    padding: 0 10px;
+   /* padding-top: 15px; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    }
+
+body {
+    margin: 0 200px;
+    background-color:gainsboro;
+
+}
+main {
+    background-color: white;
+    margin-top: 70px;
+}
+.tabla{
+    padding: 20px 0;
+    background-color: rgb(75, 77, 77);
+}
+table{
+    color: white;
+    width: 700px;
+}
+
+th {
+    padding: 5px 5px 10px 5px;
+}
+
+td{
+    padding: 2px 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+table tbody tr a {
+    text-decoration: none;
+    color: white;
+
+}
+.imagen{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+main section h1 {
+    background-color:lightsteelblue;
+    color: black;
+    margin: 0 15px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.contenedor {
+    display: flex;
+    width: 900px;
+}
+
+.lateral {
+    margin-top: 20px;
+    left: 10px;
+    top: 100px;
+    width: 150px;
+    position: sticky;
+    font-size: 16px;
+}
+
+.noticias {
+    padding: 20px 0 0 0;
+    right: 220px;
+    width: 700px;
+
+}
+
+.tituloNoticias {
+
+    color:rgb(109, 106, 106);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.contenidonoticia {
+
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 0 30px 0;
+    font-size: 12px;
+
+}
+
+.lineaDivision {
+    background-color: gray;
+}
+
+footer {
+    font-size: 12px;
+    font-family: cursive;
+    color: teal;
+    background-color: white;
+    padding: 0 30px 0 0;
+    text-align: right;
+
+}
+
+
+@media screen and (max-width: 640px){
+    * {margin: auto;}  
+}
