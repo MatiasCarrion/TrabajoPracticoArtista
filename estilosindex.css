@@ -14,6 +14,9 @@ header {
     background-color: white;
 }
 
+
+
+
 .titulo {
     position: absolute;
     top: 20px;
@@ -87,12 +90,14 @@ table tbody tr a {
     color: white;
 
 }
-.imagen{
+.imagen img{
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 10px 0;
 }
+
+
 
 main section h1 {
     background-color:lightsteelblue;
