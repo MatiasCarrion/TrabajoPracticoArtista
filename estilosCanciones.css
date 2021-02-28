@@ -14,7 +14,7 @@ header {
     top:0;
     left: 200px;
     height: 70px;
-    width: 949px;
+    right: 200px;
     display: flex;
     background-color: gray;
 }
@@ -42,16 +42,13 @@ header {
 
 nav {
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
-ul {
-    display: flex; /* esto hace que mis elementos de la lista estén alineados*/
-    justify-content: center;
-}
+
 li {
     list-style: none; /* no muestra la bolita */
     padding: 0 10px;
-   /* padding-top: 15px; */
+    display: inline-block;
 }
 
 nav ul li a {
@@ -59,25 +56,18 @@ nav ul li a {
     color: black;
     }
 
-body {
-    margin: 0 200px;
-    background-color:gainsboro;
-    width: 949px;
-    
-}
-
 .nombre {
     background-color: white;
     margin-top: 70px;
-    padding-top: 20px ;
-
+    padding-top: 10px;
+    width: 100%;
 }
-
-.nombre {
+.nombredos {
     background-color: white;
-    padding-top: 20px ;
-
+    padding-top: 10px;
+    width: 100%;
 }
+
 
 .titulos {
 
@@ -88,8 +78,8 @@ body {
     font-size: 20px;
 }
 
-.soda {
-    width: 949px;
+.videos {
+    width: auto;
     background-color: white;
     padding: 20px;
     display: flex;
@@ -104,6 +94,8 @@ body {
 iframe {
 
     margin-bottom: 3px;
+    width: auto;
+    height: auto;
 }
 
 footer {
@@ -113,5 +105,108 @@ footer {
     background-color: white;
     padding: 20px 30px 0 0;
     text-align: right;
-
 }
+
+
+@media only screen and (max-width: 983px){
+
+    header {
+        height: 45px;
+    }
+    
+    .titulo {
+        top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        }
+    
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        position: none;
+        top: 25px;
+        margin-bottom: 0;
+        width: 100%;
+        right: 0;
+        }
+
+    ul {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        font-size: 8px;
+        line-height: 1rem;
+        text-align: right;
+    }
+        
+    .nombre {
+        margin-top: 45px;
+    }
+
+    
+    .titulos {
+        font-size: 16px;
+        margin-right: 200px;
+    }
+        
+
+    footer {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 769px){
+    header {
+        height: 40px;
+
+    }
+        
+    .titulo {
+        top: 12px;
+        width: 50%;
+        text-align: center;
+        font-size: 12px;
+        }
+        
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        margin-top: 0;
+        top:0;
+        right: 0;
+        }
+
+    ul {
+        padding: 0;
+        margin-top: 2px;
+    }
+
+    li {
+        display: block;
+        line-height: 9px;
+    }
+
+    .nombre {
+        margin-top: 40px;
+    }
+    
+    .titulos {
+
+        font-size: 12px;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 6px;
+    }
+    }

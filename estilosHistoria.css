@@ -14,7 +14,7 @@ header {
     top:0;
     left: 200px;
     height: 70px;
-    width: 949px;
+    right: 200px;
     display: flex;
     background-color: gray;
 }
@@ -42,16 +42,13 @@ header {
 
 nav {
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
-ul {
-    display: flex; /* esto hace que mis elementos de la lista estén alineados*/
-    justify-content: center;
-}
+
 li {
     list-style: none; /* no muestra la bolita */
     padding: 0 10px;
-   /* padding-top: 15px; */
+    display: inline-block;
 }
 
 nav ul li a {
@@ -82,20 +79,18 @@ article {
     padding: 10px 10px;
     color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
     font-size: 12px;
 }
 
 .resaltar {
     color: red;
 }
+
 .nota  {
     padding: 0 50px;
     color:black;
     font-family:Arial, Helvetica, sans-serif;
-    
     font-size: 12px;
-
 }
 
 .imagen {
@@ -107,9 +102,10 @@ article {
 .imagen img {
     padding: 0;
     margin: 0;
-    height: 517px;
-    width: 920px;
-
+    max-height: 517px;
+    max-width: 920px;
+    width: 100%;
+    height: auto;
 }
 
 .pieImagen {
@@ -120,8 +116,6 @@ article {
     color:black;
     text-align:right;
     margin-top: 0;
-
-    
 }
 
 
@@ -132,5 +126,130 @@ footer {
     background-color: white;
     padding: 20px 30px 0 0;
     text-align: right;
-
 }
+
+
+
+
+@media only screen and (max-width: 983px){
+    header {
+        height: 45px;
+    }
+    
+    .titulo {
+        top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        }
+    
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        position: none;
+        top: 25px;
+        margin-bottom: 0;
+        width: 100%;
+        right: 0;
+        }
+
+    ul {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        font-size: 8px;
+        line-height: 1rem;
+        text-align: right;
+    }
+
+    article {
+
+        margin-top: 40px;
+        padding-top: 0;
+    }
+
+    .titulos {
+        font-size: 17px;
+    }
+    
+    .texto {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+        
+    .nota  {
+        padding: 0 30px;
+        font-size: 10px;
+    }
+
+    .pieImagen {
+        font-size:8px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 769px){
+    header {
+        height: 40px;
+    }
+        
+    .titulo {
+        top: 12px;
+        width: 50%;
+        text-align: center;
+        font-size: 12px;
+        }
+        
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        margin-top: 0;
+        top:0;
+        right: 0;
+        }
+ 
+    ul {
+        padding: 0;
+        margin-top: 2px;
+    }
+
+    li {
+        display: block;
+        line-height: 9px;
+    }
+    
+    article {
+        margin-top: 40px;
+        padding-top: 0;
+    }
+    
+    .titulos {
+        font-size: 15px;
+    }
+    
+    .texto {
+        padding: 0 10px;
+        font-size: 8px;
+    }
+        
+    .nota  {
+        padding: 0 30px;
+        font-size: 8px;
+    }
+
+    .pieImagen {
+        font-size:6px;
+    }
+    footer {
+        font-size: 6px;
+    }
+    }

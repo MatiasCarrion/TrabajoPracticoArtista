@@ -14,7 +14,7 @@ header {
     top:0;
     left: 200px;
     height: 70px;
-    width: 949px;
+    right: 200px;
     display: flex;
     background-color: gray;
 }
@@ -42,16 +42,13 @@ header {
 
 nav {
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
-ul {
-    display: flex; /* esto hace que mis elementos de la lista estén alineados*/
-    justify-content: center;
-}
+
 li {
     list-style: none; /* no muestra la bolita */
     padding: 0 10px;
-   /* padding-top: 15px; */
+    display: inline-block;
 }
 
 nav ul li a {
@@ -62,7 +59,6 @@ nav ul li a {
 body {
     margin: 0 200px;
     background-color:gainsboro;
-    width: 949px;
     
 }
 
@@ -103,17 +99,12 @@ input {
     margin: 5px;
     text-align: center;
     font-weight: 600;
-    
-
 }
 
 .marco {
 
     border-top: none;
     border-color:gainsboro;
-
-
-
 }
 
 .contenedor {
@@ -122,7 +113,6 @@ input {
     justify-content:space-around;
     flex-wrap: wrap;
     margin-top: 5px;
-
 }
 
 .contenido {
@@ -145,7 +135,7 @@ input {
     background-color: gray;
     color: white;
     border-radius: 12px;
-
+    font-size: 20px;
 }
   
   .boton:hover {
@@ -179,3 +169,141 @@ footer {
     text-align: right;
 
 }
+
+
+
+@media only screen and (max-width: 983px){
+
+    header {
+        height: 45px;
+    }
+    
+    .titulo {
+        top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        }
+    
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        position: none;
+        top: 25px;
+        margin-bottom: 0;
+        width: 100%;
+        right: 0;
+        }
+   
+    ul {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        font-size: 8px;
+        line-height: 1rem;
+        text-align: right;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+    
+    
+    form {
+        margin-top: 40px;
+    }
+    
+    .lblDatosPersonales {
+        font-size: 12px;
+    }
+    
+    .leyenda {
+        font-size: 16px;
+    }
+    
+    .contenido {
+        font-size: 12px;
+    }
+    
+    .boton {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 769px){
+    header {
+        height: 40px;
+    }
+        
+    .titulo {
+        top: 12px;
+        width: 50%;
+        text-align: center;
+        font-size: 12px;
+        }
+        
+    .subtitulo {
+        display: none;
+    }
+    
+    .menu {
+        margin-top: 0;
+        top:0;
+        right: 0;
+        }
+  
+    ul {
+        padding: 0;
+        margin-top: 2px;
+    }
+
+    li {
+        display: block;
+        line-height: 9px;
+    }
+
+    .titulos {
+        font-size: 14px;
+    }
+    
+    
+    form {
+        margin-top: 40px;
+    }
+    
+    .lblDatosPersonales {
+        font-size: 8px;
+    }
+    .lblDatosPersonales input {
+        font-size: 8px;
+    }
+    
+    .leyenda {
+        font-size: 12px;
+    }
+    
+    .contenido {
+        font-size: 8px;
+    }
+        
+    .boton {
+        font-size: 8px;
+    }
+
+    
+    #cajatexto {
+        padding:5px;
+    }
+    
+    footer {
+        font-size: 6px;
+    }
+    }
